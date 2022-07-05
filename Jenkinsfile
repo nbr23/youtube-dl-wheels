@@ -29,4 +29,8 @@ pipeline {
             sh 'docker logout'
         }
     }
+
+    triggers {
+        cron('H 5 * 1 *')
+    }
 }
